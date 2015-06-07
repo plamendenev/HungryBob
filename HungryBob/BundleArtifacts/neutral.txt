@@ -1,0 +1,4 @@
+MainPackage=C:\Users\Plamen\Documents\Visual Studio 2013\Projects\HungryBob\HungryBob\bin\Release\HungryBob_1.1.0.15_Bundle\HungryBob_1.1.0.15_AnyCPU.appx
+SymbolPackage=C:\Users\Plamen\Documents\Visual Studio 2013\Projects\HungryBob\HungryBob\AppPackages\HungryBob_1.1.0.15_Test\HungryBob_1.1.0.15_AnyCPU.appxsym
+ResourcePack=C:\Users\Plamen\Documents\Visual Studio 2013\Projects\HungryBob\HungryBob\bin\Release\HungryBob_1.1.0.15_Bundle\HungryBob_1.1.0.15_scale-100.appx
+ResourcePack=C:\Users\Plamen\Documents\Visual Studio 2013\Projects\HungryBob\HungryBob\bin\Release\HungryBob_1.1.0.15_Bundle\HungryBob_1.1.0.15_scale-140.appx

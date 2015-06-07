@@ -1,0 +1,97 @@
+﻿<Page
+    x:Class="HungryBob.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HungryBob"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/Underwater Background by SlaterDies1.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Button x:Name="PlayButton" 
+            Content="Play" 
+            HorizontalAlignment="Left" 
+            Margin="435,50,0,0" 
+            VerticalAlignment="Top" Click="PlayButton_Click" Height="79" Width="160" FontSize="25" Background="#FFF0B61D" BorderBrush="#FFEC3519" Foreground="#FF852516"/>
+        <Button x:Name="QuitButton" 
+                Content="Exit" 
+                HorizontalAlignment="Left" 
+                Margin="435,260,0,0" 
+                VerticalAlignment="Top" 
+                Click="QuitButton_Click" Height="79" Width="160" FontSize="25" Background="#FFF0B61D" BorderBrush="#FFEC3519" Foreground="#FF852516"/>
+        <Button x:Name="InstructionsButton" 
+        	Content="Instructions" 
+        	HorizontalAlignment="Left" 
+        	Margin="435,120,0,0" 
+        	VerticalAlignment="Top" Click="InstructionsButton_Click" Height="79" Width="160" FontSize="25" Background="#FFF0B61D" BorderBrush="#FFEC3519" Foreground="#FF852516"/>
+        <Button x:Name="AboutButton" 
+        	Content="About" 
+        	HorizontalAlignment="Left" 
+        	Margin="435,190,0,0" 
+        	VerticalAlignment="Top" 
+                Click="AboutButton_Click" 
+                Height="79" Width="160" 
+                FontSize="25" 
+                Background="#FFF0B61D" 
+                BorderBrush="#FFEC3519" 
+                Foreground="#FF852516"/>
+
+        <Grid x:Name="MenuButtonsText" 
+            HorizontalAlignment="Left" 
+            Height="355" 
+            Margin="390,25,0,0" 
+            VerticalAlignment="Top" 
+            Width="270" 
+            Background="#FFF0B61D" Tapped="MenuButtonsText_Tapped" Visibility="Collapsed">
+
+
+            <TextBlock x:Name="InstructionsText" 
+                HorizontalAlignment="Left" 
+                Margin="10,10,0,0" 
+                TextWrapping="Wrap" 
+                Text="Hold the screen flat and simply tilt it to move the fish around. Eat the food and avoid the enemies. 
+                To pause the game, just tap the back button. Have fun! 
+                       
+                       
+                (Tap to go back to the menu)" 
+                VerticalAlignment="Top" 
+                Height="335" Width="260" 
+                FontSize="22" 
+                Foreground="#FF852516" Visibility="Collapsed"/>
+
+            <ScrollViewer Height="435"
+                          Width=" 355"
+                          VerticalAlignment="Top" 
+                          VerticalScrollBarVisibility="Visible" 
+                          VerticalScrollMode="Enabled" 
+                          AllowDrop="True" 
+                          BringIntoViewOnFocusChange="True" 
+                          HorizontalScrollMode="Enabled" 
+                          IsHoldingEnabled="True" ZoomMode="Enabled" MinZoomFactor="1">
+            <TextBlock x:Name="AboutText" 
+                HorizontalAlignment="Left" 
+                Margin="10,10,0,0" 
+                TextWrapping="Wrap" 
+                Text="My name is Plamen Denev, and I have developed this game for my third year module Games Programming at the University of Dundee. I would like to thank my friends RonSchoenberg for his expert advice, and Atanas Dimitrov for his help with the graphics. 
+                
+                       
+                       (Tap to go back to the menu)
+                       " 
+                VerticalAlignment="Top" 
+                Height="435" Width="255" 
+                FontSize="22" 
+                Foreground="#FF852516" Visibility="Collapsed"/>
+            </ScrollViewer>
+        </Grid>
+        <MediaElement x:Name="startingMusic" 
+                      AudioCategory="GameEffects" 
+                      Source="Assets/Crystal Caves v1_2.mp3" 
+                      AutoPlay="False" 
+                      Visibility="Collapsed"/>
+
+    </Grid>
+</Page>

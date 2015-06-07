@@ -1,0 +1,21 @@
+I made this game for my Games Programming module at university. 
+
+It is a casual game, so it is simple - you control Bob the fish by tilting the screen to eat the food and avoid enemies. 
+
+For now it has the form of three levels:
+1. Getting Bob's health to full health.
+2. Jellyfish appear and you need to avoid them.
+3. Bricks start falling down which also need to be avoided.
+
+The goal is to stay alive and eat as much food as possible! The score is the number of food eaten. Health in percentage is also displayed, and Bob's speed depends on it.
+
+The game ends when Bob's health reaches 0%.
+
+There are more features and things to make it look better which I will to implement if I have time. 
+
+Credits:
+- Background image: Underwater Background by SlaterDies
+- Spritesheets by Sleepy Harry
+- Doughnut: http://imgbuddy.com/donut-transparent.asp
+- Some of the sounds are from Skippy Fish Water Sound Collection and some from http://www.freesfx.co.uk
+- Jellyfish: http://www.misskatecuttables.com
